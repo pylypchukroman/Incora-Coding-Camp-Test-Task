@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Incora-Coding-Camp-Test-Task/static/css/main.7acaea2f.css",
+    "main.css": "/Incora-Coding-Camp-Test-Task/static/css/main.3dea921e.css",
     "main.js": "/Incora-Coding-Camp-Test-Task/static/js/main.3ce7745a.js",
     "index.html": "/Incora-Coding-Camp-Test-Task/index.html",
-    "main.7acaea2f.css.map": "/Incora-Coding-Camp-Test-Task/static/css/main.7acaea2f.css.map",
+    "main.3dea921e.css.map": "/Incora-Coding-Camp-Test-Task/static/css/main.3dea921e.css.map",
     "main.3ce7745a.js.map": "/Incora-Coding-Camp-Test-Task/static/js/main.3ce7745a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
+    "static/css/main.3dea921e.css",
     "static/js/main.3ce7745a.js"
   ]
 }
