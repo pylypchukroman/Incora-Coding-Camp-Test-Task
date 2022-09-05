@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/Incora-Coding-Camp-Test-Task/static/css/main.3dea921e.css",
-    "main.js": "/Incora-Coding-Camp-Test-Task/static/js/main.3ce7745a.js",
+    "main.css": "/Incora-Coding-Camp-Test-Task/static/css/main.7acaea2f.css",
+    "main.js": "/Incora-Coding-Camp-Test-Task/static/js/main.b13ba2ac.js",
+    "static/css/680.36e04e18.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/680.36e04e18.chunk.css",
+    "static/js/680.052c4eaa.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/680.052c4eaa.chunk.js",
+    "static/css/845.36e04e18.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/845.36e04e18.chunk.css",
+    "static/js/845.855bf6b8.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/845.855bf6b8.chunk.js",
+    "static/css/31.36e04e18.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/31.36e04e18.chunk.css",
+    "static/js/31.863b6ff3.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/31.863b6ff3.chunk.js",
     "index.html": "/Incora-Coding-Camp-Test-Task/index.html",
-    "main.3dea921e.css.map": "/Incora-Coding-Camp-Test-Task/static/css/main.3dea921e.css.map",
-    "main.3ce7745a.js.map": "/Incora-Coding-Camp-Test-Task/static/js/main.3ce7745a.js.map"
+    "main.7acaea2f.css.map": "/Incora-Coding-Camp-Test-Task/static/css/main.7acaea2f.css.map",
+    "main.b13ba2ac.js.map": "/Incora-Coding-Camp-Test-Task/static/js/main.b13ba2ac.js.map",
+    "680.36e04e18.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/680.36e04e18.chunk.css.map",
+    "680.052c4eaa.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/680.052c4eaa.chunk.js.map",
+    "845.36e04e18.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/845.36e04e18.chunk.css.map",
+    "845.855bf6b8.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/845.855bf6b8.chunk.js.map",
+    "31.36e04e18.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/31.36e04e18.chunk.css.map",
+    "31.863b6ff3.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/31.863b6ff3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dea921e.css",
-    "static/js/main.3ce7745a.js"
+    "static/css/main.7acaea2f.css",
+    "static/js/main.b13ba2ac.js"
   ]
 }
