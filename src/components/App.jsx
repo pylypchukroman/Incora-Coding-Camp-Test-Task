@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
