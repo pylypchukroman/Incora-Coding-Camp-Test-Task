@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imgWrapper {
+  width: 250px;
+  height: 100%;
+  margin-right: 30px;
+}
+.imgWrapper img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+.textWrapper {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.textWrapper p {
+  margin-bottom: 10px;
+}
+.episodItem {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgb(255 255 255) 0px 3px 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 45%;
+}
+.episodTitle {
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -1,8 +1,9 @@
 .wrapper {
-  padding: 35px;
   background-color: black;
+  min-height: 100vh;
 }
-.wrapper h2 {
+
+.title {
+  margin-bottom: 40px;
   color: white;
-  margin-bottom: 30px;
 }

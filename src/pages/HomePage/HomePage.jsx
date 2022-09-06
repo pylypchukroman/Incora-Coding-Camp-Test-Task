@@ -9,12 +9,12 @@ const HomePage = () => {
         <div className={styles.info}>
           <p>Welcome to BD Screens</p>
           <h1 className={styles.title}>
-            Watch Unlimited <br /> Movies, Drama, Music Video <br /> and More
+            Download Unlimited <br /> Movies, Drama, Music Video <br /> and More
             Content.
           </h1>
           <p>
             Enjoy popular Movies and Live shows.
-            <br /> Subscribe to your favorite services
+            <br /> Subscribe BD Screen now
           </p>
         </div>
       </div>
