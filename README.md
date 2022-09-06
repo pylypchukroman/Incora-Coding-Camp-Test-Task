@@ -5,7 +5,7 @@
 
 - Як back-end було взято
   [The Movie Database API](https://developers.themoviedb.org/4/getting-started);
-- стилі - [SCSS](https://create-react-app.dev/docs/adding-a-sass-stylesheet/);
+- Стилі - [SCSS](https://create-react-app.dev/docs/adding-a-sass-stylesheet/);
 - Раутінг -
   [React Router Dom v5](https://www.npmjs.com/package/react-router-dom/v/5.3.0);
 - HTTP клієнт - [axios](https://www.npmjs.com/package/axios);
