@@ -1,6 +1,6 @@
 import styles from './ServiceInfo.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
-import { useLocation, useParams } from 'react-router';
+import { useLocation } from 'react-router';
 
 const ServiceInfo = ({ service, subscribe }) => {
   const imageOnErrorHandler = event => {
