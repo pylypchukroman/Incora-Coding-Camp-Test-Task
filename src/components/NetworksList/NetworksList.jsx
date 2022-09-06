@@ -25,8 +25,6 @@ const NetworksList = ({ networks }) => {
                   src={`https://image.tmdb.org/t/p/original/${network.logo_path}`}
                   onError={imageOnErrorHandler}
                   className={styles.img}
-                  // width="50%"
-                  // height="50%"
                 />
               </div>
             </Link>

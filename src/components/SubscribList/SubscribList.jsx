@@ -20,15 +20,15 @@ const SubscribList = ({ subscribList }) => {
               className={styles.link}
             >
               <p className={styles.linkText}>{network.name}</p>
-              <LazyLoadImage
-                alt={network.name}
-                effect="blur"
-                src={`https://image.tmdb.org/t/p/original/${network.logo_path}`}
-                onError={imageOnErrorHandler}
-                className={styles.img}
-                width="120"
-                height="60"
-              />
+              <div className={styles.imgWrapper}>
+                <LazyLoadImage
+                  alt={network.name}
+                  effect="blur"
+                  src={`https://image.tmdb.org/t/p/original/${network.logo_path}`}
+                  onError={imageOnErrorHandler}
+                  className={styles.img}
+                />
+              </div>
             </Link>
           </li>
         ))}

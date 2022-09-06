@@ -14,7 +14,7 @@ const HomePage = () => {
           </h1>
           <p>
             Enjoy popular Movies and Live shows.
-            <br /> Subscribe BD Screen now
+            <br /> Subscribe to your favorites tv networks now
           </p>
         </div>
       </div>

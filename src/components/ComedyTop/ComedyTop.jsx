@@ -1,9 +1,9 @@
 import styles from './ComedyTop.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { useEffect, useState } from 'react';
-import { getComedyTop } from 'Utils/MovieAPI';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { getMostViewedShowsOfGenre } from 'Utils/MovieAPI';
 
 const ComedyTop = () => {
   const imageOnErrorHandler = event => {
@@ -11,7 +11,7 @@ const ComedyTop = () => {
   };
   const [shows, setShows] = useState([]);
   useEffect(() => {
-    getComedyTop().then(data => setShows(data));
+    getMostViewedShowsOfGenre().then(data => setShows(data));
   }, []);
   return (
     <ul className={styles.list}>

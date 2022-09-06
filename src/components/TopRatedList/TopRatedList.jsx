@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from './TopRatedList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
-import { getTopRated } from 'Utils/MovieAPI';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
+import { getMostViewedShowsOfYear } from 'Utils/MovieAPI';
 
 const TopRatedList = () => {
   const imageOnErrorHandler = event => {
@@ -13,7 +13,7 @@ const TopRatedList = () => {
   const [shows, setShows] = useState([]);
 
   useEffect(() => {
-    getTopRated().then(data => setShows(data));
+    getMostViewedShowsOfYear().then(data => setShows(data));
   }, []);
 
   return (

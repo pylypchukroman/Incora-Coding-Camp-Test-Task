@@ -3,9 +3,9 @@ export { getServiceInfo };
 export { getSeriesList };
 export { getSerial };
 export { getSeasonInfo };
-export { getTopRated };
+export { getMostViewedShowsOfYear };
 export { getPopularToday };
-export { getComedyTop };
+export { getMostViewedShowsOfGenre };
 
 axios.defaults.baseURL = 'https://api.themoviedb.org';
 axios.defaults.params = {
@@ -53,7 +53,7 @@ async function getSeasonInfo(serialId, seasonNumber) {
   return response;
 }
 
-async function getTopRated() {
+async function getMostViewedShowsOfYear() {
   const response = axios
     .get(`/3/discover/tv?&sort_by=popularity.desc&with_networks=213`)
     .then(res => res.data.results)
@@ -73,7 +73,7 @@ async function getPopularToday() {
   return response;
 }
 
-async function getComedyTop() {
+async function getMostViewedShowsOfGenre() {
   const response = axios
     .get(`/3/discover/movie?&sort_by=popularity.desc&with_genres=35`)
     .then(res => res.data.results)
