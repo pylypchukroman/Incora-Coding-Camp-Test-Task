@@ -1,9 +1,19 @@
 import styles from './EpisodesList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { useEffect, useState } from 'react';
 
 const EpisodesList = ({ episodes }) => {
   const imageOnErrorHandler = event => {
     event.currentTarget.src = noImageLoad;
+  };
+  const [watches, setWatches] = useState(1);
+  useEffect(() => {
+    const number = Math.floor(Math.random() * 100);
+    setWatches(number);
+  }, []);
+
+  const onWatchBtbClick = () => {
+    setWatches(prev => prev + 1);
   };
   return (
     <ul className={styles.list}>
@@ -26,6 +36,14 @@ const EpisodesList = ({ episodes }) => {
               <p>
                 Vote: {episod.vote_average} ({episod.vote_count} votes)
               </p>
+              <p>Watches: {watches}</p>
+              <button
+                type="button"
+                className={styles.watchBtn}
+                onClick={onWatchBtbClick}
+              >
+                Watch
+              </button>
             </div>
           </li>
         ))}

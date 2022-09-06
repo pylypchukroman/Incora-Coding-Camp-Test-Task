@@ -1,10 +1,14 @@
 import styles from './ServiceInfo.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { useLocation, useParams } from 'react-router';
 
 const ServiceInfo = ({ service, subscribe }) => {
   const imageOnErrorHandler = event => {
     event.currentTarget.src = noImageLoad;
   };
+  const location = useLocation();
+  const currentPage = location.pathname.split('/')[1];
+
   return (
     <div className={styles.serviceInfo}>
       <div className={styles.imageWrapper}>
@@ -23,6 +27,7 @@ const ServiceInfo = ({ service, subscribe }) => {
           type="button"
           className={styles.sub}
           onClick={() => subscribe(service.id)}
+          hidden={currentPage === 'subscription' ? true : false}
         >
           Subscribe
         </button>

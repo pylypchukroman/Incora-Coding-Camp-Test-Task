@@ -7,7 +7,7 @@ const PaginationButtons = ({ page, onLoadMore, onLoadPrev }) => {
         <button
           className={styles.paginationBtn}
           onClick={onLoadPrev}
-          disabled={page <= 1 ? 'true' : null}
+          disabled={page <= 1 ? true : false}
         >
           Previous Page
         </button>
