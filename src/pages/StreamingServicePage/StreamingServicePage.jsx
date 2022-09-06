@@ -5,7 +5,7 @@ import { NetworkContext } from 'Context/NetworkContext';
 import NetworksList from 'components/NetworksList/NetworksList';
 
 const StreamingServicePage = () => {
-  const { networks, setNetworks } = useContext(NetworkContext);
+  const { networks } = useContext(NetworkContext);
 
   return (
     <>

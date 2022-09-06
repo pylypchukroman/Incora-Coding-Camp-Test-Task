@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import styles from './SubscriptionPage.module.scss';
 
 const SubscriptionPage = () => {
-  const { networks, setNetworks } = useContext(NetworkContext);
+  const { networks } = useContext(NetworkContext);
   const subscribList = networks.filter(network => network.sub === true);
 
   return (

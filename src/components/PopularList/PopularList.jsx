@@ -10,7 +10,7 @@ const PopularList = () => {
   const [shows, setShows] = useState([]);
   useEffect(() => {
     getPopularToday().then(data => setShows(data));
-  }, []);
+  });
 
   return (
     <ul className={styles.list}>
