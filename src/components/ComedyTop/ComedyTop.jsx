@@ -16,7 +16,7 @@ const ComedyTop = () => {
   return (
     <ul className={styles.list}>
       {shows &&
-        shows.slice(0, 8).map(show => (
+        shows.slice(0, 7).map(show => (
           <li key={show.id} className={styles.item}>
             <div className={styles.imageWrapper}>
               <LazyLoadImage

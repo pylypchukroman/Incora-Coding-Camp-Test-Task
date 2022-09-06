@@ -5,7 +5,7 @@ import Logo from '../../images/logo-min.png';
 const Navigation = () => {
   return (
     <nav className={styles.nav}>
-      <NavLink exact to="/">
+      <NavLink className={styles.logo} exact to="/">
         <img src={Logo} alt="logo" width="80" height="20" />
       </NavLink>
       <NavLink

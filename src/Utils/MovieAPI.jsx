@@ -55,7 +55,7 @@ async function getSeasonInfo(serialId, seasonNumber) {
 
 async function getTopRated() {
   const response = axios
-    .get(`/3/tv/top_rated`)
+    .get(`/3/discover/tv?&sort_by=popularity.desc&with_networks=213`)
     .then(res => res.data.results)
     .catch(error => {
       throw error;

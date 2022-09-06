@@ -28,6 +28,11 @@
     color: black;
     margin-bottom: 20px;
     text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+      color: blue;
+      transform: scale(1.05);
+    }
   }
   p {
     margin-bottom: 20px;

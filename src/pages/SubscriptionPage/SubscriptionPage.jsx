@@ -17,7 +17,7 @@ const SubscriptionPage = () => {
       <div className={styles.wrapper}>
         <h2>Popular striming servises</h2>
         <SubscribList subscribList={subscribList} />
-        <h2>Top rated shows</h2>
+        <h2>Top rated on Netflix</h2>
         <TopRatedList />
         <h2>Popular today</h2>
         <PopularList />
