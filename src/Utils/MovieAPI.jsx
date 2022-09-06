@@ -1,4 +1,11 @@
 import axios from 'axios';
+export { getServiceInfo };
+export { getSeriesList };
+export { getSerial };
+export { getSeasonInfo };
+export { getTopRated };
+export { getPopularToday };
+export { getComedyTop };
 
 axios.defaults.baseURL = 'https://api.themoviedb.org';
 axios.defaults.params = {
@@ -6,65 +13,72 @@ axios.defaults.params = {
   language: 'en-US',
 };
 
-export const getServiceInfo = id => {
-  return axios
+async function getServiceInfo(id) {
+  const response = await axios
     .get(`/3/network/${id}`)
     .then(res => res.data)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getSeriesList = (id, page) => {
-  return axios
+async function getSeriesList(id, page) {
+  const response = axios
     .get(`/3/discover/tv?&with_networks=${id}&page=${page}`)
     .then(res => res.data.results)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getSerial = id => {
-  return axios
+async function getSerial(id) {
+  const response = axios
     .get(`/3/tv/${id}`)
     .then(res => res.data)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getSeasonInfo = (serialId, seasonNumber) => {
-  return axios
+async function getSeasonInfo(serialId, seasonNumber) {
+  const response = axios
     .get(`/3/tv/${serialId}/season/${seasonNumber}`)
     .then(res => res.data)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getTopRated = () => {
-  return axios
+async function getTopRated() {
+  const response = axios
     .get(`/3/tv/top_rated`)
     .then(res => res.data.results)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getPopularToday = () => {
-  return axios
+async function getPopularToday() {
+  const response = axios
     .get(`/3/tv/popular`)
     .then(res => res.data.results)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}
 
-export const getComedyTop = () => {
-  return axios
+async function getComedyTop() {
+  const response = axios
     .get(`/3/discover/movie?&sort_by=popularity.desc&with_genres=35`)
     .then(res => res.data.results)
     .catch(error => {
       throw error;
     });
-};
+  return response;
+}

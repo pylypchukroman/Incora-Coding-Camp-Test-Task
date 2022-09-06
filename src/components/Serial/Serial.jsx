@@ -16,7 +16,7 @@ const Serial = () => {
 
   useEffect(() => {
     showId && getSerial(showId).then(data => setSerial(data));
-  });
+  }, [showId]);
 
   return (
     <div className={styles.wrapper}>

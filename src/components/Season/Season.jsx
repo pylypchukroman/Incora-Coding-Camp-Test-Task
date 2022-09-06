@@ -13,7 +13,7 @@ const Season = () => {
 
   useEffect(() => {
     getSeasonInfo(showId, seasonId).then(data => setEpisodes(data.episodes));
-  });
+  }, [showId, seasonId]);
 
   return (
     <>

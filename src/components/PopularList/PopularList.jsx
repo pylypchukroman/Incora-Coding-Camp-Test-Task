@@ -7,10 +7,11 @@ const PopularList = () => {
   const imageOnErrorHandler = event => {
     event.currentTarget.src = noImageLoad;
   };
+
   const [shows, setShows] = useState([]);
   useEffect(() => {
     getPopularToday().then(data => setShows(data));
-  });
+  }, []);
 
   return (
     <ul className={styles.list}>
