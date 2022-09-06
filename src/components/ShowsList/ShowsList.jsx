@@ -3,6 +3,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import noImageLoad from '../../images/no-image-min.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const ShowsList = ({ shows, networkName }) => {
   const imageOnErrorHandler = event => {
@@ -43,6 +44,11 @@ const ShowsList = ({ shows, networkName }) => {
         ))}
     </ul>
   );
+};
+
+ShowsList.propTypes = {
+  shows: PropTypes.array.isRequired,
+  networkName: PropTypes.string,
 };
 
 export default ShowsList;

@@ -3,6 +3,7 @@ import styles from './SubscribList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const SubscribList = ({ subscribList }) => {
   const imageOnErrorHandler = event => {
@@ -34,6 +35,10 @@ const SubscribList = ({ subscribList }) => {
         ))}
     </ul>
   );
+};
+
+SubscribList.propTypes = {
+  subscribList: PropTypes.array.isRequired,
 };
 
 export default SubscribList;

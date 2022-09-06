@@ -3,6 +3,7 @@ import noImageLoad from '../../images/no-image-min.png';
 import { useLocation } from 'react-router';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const ServiceInfo = ({ service, subscribe }) => {
   const imageOnErrorHandler = event => {
@@ -21,7 +22,6 @@ const ServiceInfo = ({ service, subscribe }) => {
           onError={imageOnErrorHandler}
           className={styles.img}
         />
-
       </div>
       <div className={styles.serviceInfoText}>
         <p>{service.name}</p>
@@ -38,6 +38,11 @@ const ServiceInfo = ({ service, subscribe }) => {
       </div>
     </div>
   );
+};
+
+ServiceInfo.propTypes = {
+  service: PropTypes.object.isRequired,
+  subscribe: PropTypes.func.isRequired,
 };
 
 export default ServiceInfo;

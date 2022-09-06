@@ -3,6 +3,7 @@ import styles from './SeasonsList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const SeasonsList = ({ seasons, serviceId, showId }) => {
   const imageOnErrorHandler = event => {
@@ -35,6 +36,12 @@ const SeasonsList = ({ seasons, serviceId, showId }) => {
         ))}
     </ul>
   );
+};
+
+SeasonsList.propTypes = {
+  seasons: PropTypes.array,
+  serviceId: PropTypes.string.isRequired,
+  showId: PropTypes.string.isRequired,
 };
 
 export default SeasonsList;

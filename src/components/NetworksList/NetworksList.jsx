@@ -3,6 +3,7 @@ import styles from './NetworksList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const NetworksList = ({ networks }) => {
   const imageOnErrorHandler = event => {
@@ -32,6 +33,10 @@ const NetworksList = ({ networks }) => {
         ))}
     </ul>
   );
+};
+
+NetworksList.propTypes = {
+  networks: PropTypes.array.isRequired,
 };
 
 export default NetworksList;

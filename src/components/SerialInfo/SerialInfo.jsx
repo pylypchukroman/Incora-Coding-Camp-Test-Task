@@ -2,6 +2,7 @@ import styles from './SerialInfo.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PropTypes from 'prop-types';
 
 const SerialInfo = ({ serial }) => {
   const airdate = serial.first_air_date;
@@ -39,6 +40,10 @@ const SerialInfo = ({ serial }) => {
       </div>
     </div>
   );
+};
+
+SerialInfo.propTypes = {
+  serial: PropTypes.object.isRequired,
 };
 
 export default SerialInfo;

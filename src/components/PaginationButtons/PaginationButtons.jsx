@@ -1,4 +1,5 @@
 import styles from './PaginationButtons.module.scss';
+import PropTypes from 'prop-types';
 
 const PaginationButtons = ({ page, onLoadMore, onLoadPrev }) => {
   return (
@@ -17,6 +18,12 @@ const PaginationButtons = ({ page, onLoadMore, onLoadPrev }) => {
       </div>
     </div>
   );
+};
+
+PaginationButtons.propTypes = {
+  page: PropTypes.number.isRequired,
+  onLoadMore: PropTypes.func.isRequired,
+  onLoadPrev: PropTypes.func.isRequired,
 };
 
 export default PaginationButtons;
