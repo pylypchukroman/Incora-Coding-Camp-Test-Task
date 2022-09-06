@@ -1,5 +1,7 @@
 import styles from './SerialInfo.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const SerialInfo = ({ serial }) => {
   const airdate = serial.first_air_date;
@@ -13,11 +15,12 @@ const SerialInfo = ({ serial }) => {
   return (
     <div className={styles.info}>
       <div className={styles.imgWrapper}>
-        <img
-          src={`https://image.tmdb.org/t/p/original/${serial.poster_path}`}
+        <LazyLoadImage
           alt={serial.name}
+          effect="blur"
+          src={`https://image.tmdb.org/t/p/original/${serial.poster_path}`}
           onError={imageOnErrorHandler}
-          loading="lazy"
+          className={styles.img}
         />
       </div>
       <div className={styles.textWrapper}>

@@ -7,7 +7,7 @@
   height: 450px;
   margin-right: 40px;
 }
-.imgWrapper > img {
+.img {
   display: block;
   width: 300px;
   height: 450px;
@@ -33,10 +33,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.textWrapper p {
-  color: white;
-}
-.textWrapper a {
-  color: white;
-  text-decoration: none;
+.textWrapper {
+  p {
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

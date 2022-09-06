@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './SeasonsList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const SeasonsList = ({ seasons, serviceId, showId }) => {
   const imageOnErrorHandler = event => {
@@ -12,11 +14,12 @@ const SeasonsList = ({ seasons, serviceId, showId }) => {
         seasons.map(season => (
           <li key={season.id} className={styles.seasonItem}>
             <div className={styles.seasonImgWrapper}>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${season.poster_path}`}
+              <LazyLoadImage
                 alt={season.name}
+                effect="blur"
+                src={`https://image.tmdb.org/t/p/original/${season.poster_path}`}
                 onError={imageOnErrorHandler}
-                loading="lazy"
+                className={styles.img}
               />
             </div>
             <div className={styles.seasonInfo}>

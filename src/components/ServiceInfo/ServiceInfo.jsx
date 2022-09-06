@@ -1,6 +1,8 @@
 import styles from './ServiceInfo.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { useLocation } from 'react-router';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ServiceInfo = ({ service, subscribe }) => {
   const imageOnErrorHandler = event => {
@@ -12,12 +14,14 @@ const ServiceInfo = ({ service, subscribe }) => {
   return (
     <div className={styles.serviceInfo}>
       <div className={styles.imageWrapper}>
-        <img
-          src={`https://image.tmdb.org/t/p/original/${service.logo_path}`}
+        <LazyLoadImage
           alt={service.name}
+          effect="blur"
+          src={`https://image.tmdb.org/t/p/original/${service.logo_path}`}
           onError={imageOnErrorHandler}
-          loading="lazy"
+          className={styles.img}
         />
+
       </div>
       <div className={styles.serviceInfoText}>
         <p>{service.name}</p>

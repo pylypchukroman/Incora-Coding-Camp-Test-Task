@@ -2,6 +2,8 @@ import styles from './ComedyTop.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { useEffect, useState } from 'react';
 import { getComedyTop } from 'Utils/MovieAPI';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ComedyTop = () => {
   const imageOnErrorHandler = event => {
@@ -17,11 +19,12 @@ const ComedyTop = () => {
         shows.slice(0, 8).map(show => (
           <li key={show.id} className={styles.item}>
             <div className={styles.imageWrapper}>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
+              <LazyLoadImage
                 alt={show.name}
+                effect="blur"
+                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
                 onError={imageOnErrorHandler}
-                loading="lazy"
+                className={styles.img}
               />
             </div>
             <div className={styles.info}>

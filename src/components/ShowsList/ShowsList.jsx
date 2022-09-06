@@ -1,6 +1,8 @@
 import styles from './ShowsList.module.scss';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import noImageLoad from '../../images/no-image-min.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ShowsList = ({ shows, networkName }) => {
   const imageOnErrorHandler = event => {
@@ -15,14 +17,14 @@ const ShowsList = ({ shows, networkName }) => {
         shows.map(show => (
           <li key={show.id} className={styles.item}>
             <div className={styles.image}>
-              <img
-                className={styles.image}
-                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
+              <LazyLoadImage
                 alt={show.name}
+                effect="blur"
+                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
+                onError={imageOnErrorHandler}
+                className={styles.img}
                 width="120"
                 height="60"
-                onError={imageOnErrorHandler}
-                loading="lazy"
               />
             </div>
             <div className={styles.showText}>

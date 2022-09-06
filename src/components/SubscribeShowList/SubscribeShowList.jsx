@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './SubscribeShowList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const SubscribeShowList = ({ shows, serviceId }) => {
   const imageOnErrorHandler = event => {
@@ -12,13 +14,12 @@ const SubscribeShowList = ({ shows, serviceId }) => {
         shows.map(show => (
           <li key={show.id} className={styles.item}>
             <div className={styles.image}>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
+              <LazyLoadImage
                 alt={show.name}
-                width="120"
-                height="60"
+                effect="blur"
+                src={`https://image.tmdb.org/t/p/original/${show.poster_path}`}
                 onError={imageOnErrorHandler}
-                loading="lazy"
+                className={styles.img}
               />
             </div>
             <div className={styles.showText}>

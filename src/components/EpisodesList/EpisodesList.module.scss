@@ -8,18 +8,19 @@
   height: 100%;
   margin-right: 30px;
 }
-.imgWrapper img {
+.img {
+  display: block;
   width: 250px;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
 }
 .textWrapper {
   display: flex;
   padding: 20px;
   flex-direction: column;
-}
-.textWrapper p {
-  margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
 }
 .episodItem {
   display: flex;

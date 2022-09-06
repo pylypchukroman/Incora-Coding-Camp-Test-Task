@@ -14,7 +14,7 @@
 .showText {
   margin-left: 20px;
 }
-.image img {
+.img {
   display: block;
   width: 130px;
   height: 170px;
@@ -22,6 +22,9 @@
 }
 .showText {
   padding: 20px;
+  p {
+    margin-bottom: 10px;
+  }
 }
 .title {
   display: inline-block;
@@ -29,22 +32,20 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.5s;
+  &:hover {
+    color: blue;
+    transform: scale(1.05);
+  }
 }
-.title:hover {
-  color: blue;
-  transform: scale(1.05);
-}
-.showText p {
-  margin-bottom: 10px;
-}
+
 .vote {
   margin-bottom: 0;
 }
 .rate {
   display: flex;
-}
-.rate p {
-  margin-right: 20px;
+  p {
+    margin-right: 20px;
+  }
 }
 .overview {
   height: 53px;

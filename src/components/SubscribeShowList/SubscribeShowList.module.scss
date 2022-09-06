@@ -11,7 +11,7 @@
   overflow: hidden;
   display: flex;
 }
-.image img {
+.img {
   display: block;
   width: 130px;
   height: 170px;
@@ -19,10 +19,11 @@
 }
 .showText {
   padding: 20px;
+  p {
+    margin-bottom: 10px;
+  }
 }
-.showText p {
-  margin-bottom: 10px;
-}
+
 .title {
   display: inline-block;
   font-size: 24px;
@@ -32,19 +33,20 @@
   text-decoration: none;
   color: black;
   margin-bottom: 10px;
+  &:hover {
+    color: blue;
+    transform: scale(1.05);
+  }
 }
-.title:hover {
-  color: blue;
-  transform: scale(1.05);
-}
+
 .vote {
   margin-bottom: 0;
 }
 .rate {
   display: flex;
-}
-.rate p {
-  margin-right: 20px;
+  p {
+    margin-right: 20px;
+  }
 }
 .overview {
   height: 53px;

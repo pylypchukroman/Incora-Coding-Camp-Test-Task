@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './NetworksList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const NetworksList = ({ networks }) => {
   const imageOnErrorHandler = event => {
@@ -16,14 +18,17 @@ const NetworksList = ({ networks }) => {
               className={styles.link}
             >
               <p className={styles.linkText}>{network.name}</p>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${network.logo_path}`}
-                alt={network.name}
-                width="50%"
-                height="50%"
-                onError={imageOnErrorHandler}
-                loading="lazy"
-              />
+              <div className={styles.imgWrapper}>
+                <LazyLoadImage
+                  alt={network.name}
+                  effect="blur"
+                  src={`https://image.tmdb.org/t/p/original/${network.logo_path}`}
+                  onError={imageOnErrorHandler}
+                  className={styles.img}
+                  // width="50%"
+                  // height="50%"
+                />
+              </div>
             </Link>
           </li>
         ))}

@@ -1,6 +1,8 @@
 import styles from './EpisodesList.module.scss';
 import noImageLoad from '../../images/no-image-min.png';
 import { useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const EpisodesList = ({ episodes }) => {
   const imageOnErrorHandler = event => {
@@ -21,11 +23,12 @@ const EpisodesList = ({ episodes }) => {
         episodes.map(episod => (
           <li key={episod.id} className={styles.episodItem}>
             <div className={styles.imgWrapper}>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${episod.still_path}`}
+              <LazyLoadImage
                 alt={episod.name}
+                effect="blur"
+                src={`https://image.tmdb.org/t/p/original/${episod.still_path}`}
                 onError={imageOnErrorHandler}
-                loading="lazy"
+                className={styles.img}
               />
             </div>
             <div className={styles.textWrapper}>

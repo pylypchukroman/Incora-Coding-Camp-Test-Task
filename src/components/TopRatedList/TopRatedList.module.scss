@@ -17,7 +17,7 @@
   height: 220px;
   margin-bottom: 10px;
 }
-.imageWrapper img {
+.img {
   display: block;
   width: 150px;
   height: 220px;
@@ -25,11 +25,12 @@
 }
 .info {
   padding: 0 10px;
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
-.info p {
-  margin-bottom: 10px;
-  text-align: center;
-}
+
 .title {
   font-weight: 600;
 }
