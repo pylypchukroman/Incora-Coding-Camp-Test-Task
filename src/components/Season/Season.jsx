@@ -3,7 +3,7 @@ import GoBackButton from 'components/GoBackButton/GoBackButton';
 import Navigation from 'components/Navigation/Navigation';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import { getSeasonInfo } from 'Utils/MovieAPI';
 import styles from './Season.module.scss';
 
