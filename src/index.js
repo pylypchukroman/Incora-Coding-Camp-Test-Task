@@ -7,7 +7,7 @@ import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Incora-Coding-Camp-Test-Task/">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
