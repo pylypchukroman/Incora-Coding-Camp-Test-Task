@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Incora-Coding-Camp-Test-Task/static/css/main.18827f50.css",
-    "main.js": "/Incora-Coding-Camp-Test-Task/static/js/main.91f4a530.js",
+    "main.js": "/Incora-Coding-Camp-Test-Task/static/js/main.92b3db7b.js",
     "static/css/156.8b5c16c1.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/156.8b5c16c1.chunk.css",
     "static/js/156.ba07d137.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/156.ba07d137.chunk.js",
     "static/css/571.723860ff.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/571.723860ff.chunk.css",
@@ -15,16 +15,15 @@
     "static/css/760.449343e8.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/760.449343e8.chunk.css",
     "static/js/760.12ccd06f.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/760.12ccd06f.chunk.js",
     "static/css/610.7f68e950.chunk.css": "/Incora-Coding-Camp-Test-Task/static/css/610.7f68e950.chunk.css",
-    "static/js/610.da013cd4.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/610.da013cd4.chunk.js",
+    "static/js/610.c0985f26.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/610.c0985f26.chunk.js",
     "static/js/787.6b7abe35.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/787.6b7abe35.chunk.js",
     "static/js/774.b47371b3.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/774.b47371b3.chunk.js",
     "static/js/264.7969e556.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/264.7969e556.chunk.js",
-    "static/js/203.dbd69878.chunk.js": "/Incora-Coding-Camp-Test-Task/static/js/203.dbd69878.chunk.js",
     "static/media/hero-min.jpeg": "/Incora-Coding-Camp-Test-Task/static/media/hero-min.7e3d1c1d50cd1613804b.jpeg",
     "static/media/no-image-min.png": "/Incora-Coding-Camp-Test-Task/static/media/no-image-min.d54268585f778972bad9.png",
     "index.html": "/Incora-Coding-Camp-Test-Task/index.html",
     "main.18827f50.css.map": "/Incora-Coding-Camp-Test-Task/static/css/main.18827f50.css.map",
-    "main.91f4a530.js.map": "/Incora-Coding-Camp-Test-Task/static/js/main.91f4a530.js.map",
+    "main.92b3db7b.js.map": "/Incora-Coding-Camp-Test-Task/static/js/main.92b3db7b.js.map",
     "156.8b5c16c1.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/156.8b5c16c1.chunk.css.map",
     "156.ba07d137.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/156.ba07d137.chunk.js.map",
     "571.723860ff.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/571.723860ff.chunk.css.map",
@@ -38,14 +37,13 @@
     "760.449343e8.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/760.449343e8.chunk.css.map",
     "760.12ccd06f.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/760.12ccd06f.chunk.js.map",
     "610.7f68e950.chunk.css.map": "/Incora-Coding-Camp-Test-Task/static/css/610.7f68e950.chunk.css.map",
-    "610.da013cd4.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/610.da013cd4.chunk.js.map",
+    "610.c0985f26.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/610.c0985f26.chunk.js.map",
     "787.6b7abe35.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/787.6b7abe35.chunk.js.map",
     "774.b47371b3.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/774.b47371b3.chunk.js.map",
-    "264.7969e556.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/264.7969e556.chunk.js.map",
-    "203.dbd69878.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/203.dbd69878.chunk.js.map"
+    "264.7969e556.chunk.js.map": "/Incora-Coding-Camp-Test-Task/static/js/264.7969e556.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18827f50.css",
-    "static/js/main.91f4a530.js"
+    "static/js/main.92b3db7b.js"
   ]
 }
